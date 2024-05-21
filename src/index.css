@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face {
+  font-family: 'Body Grotesque Large Trial';
+  src: url('asset/fonts/4.Body-Grotesque-Large-Bold-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Body Grotesque Trial';
+  src: url('asset/fonts/1.Body-Grotesque-Slim-Bold-trial.ttf');
+}
+                
+body {
+  font-family: 'Body Grotesque Trial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--white);
+  background-repeat: repeat-y;
+  background-image: url('asset/images/bg.png');
+  background-blend-mode: lighten;
+  max-width: calc(100svw);
+  min-height: calc(100svh);
+  margin: 3rem 4rem;
+}
