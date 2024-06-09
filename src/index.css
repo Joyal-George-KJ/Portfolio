@@ -20,5 +20,5 @@ body {
   background-blend-mode: lighten;
   max-width: calc(100svw);
   min-height: calc(100svh);
-  margin: 3rem 4rem;
+  margin: 3rem 2rem 0 0;
 }

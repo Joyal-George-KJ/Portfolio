@@ -7,6 +7,44 @@
   --font-size-large: 44px;
 }
 
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loader */
+.loader {
+  --d:22px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  color: #25b09b;
+  box-shadow: 
+    calc(1*var(--d))      calc(0*var(--d))     0 0,
+    calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+    calc(0*var(--d))      calc(1*var(--d))     0 2px,
+    calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+    calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+    calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+    calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+  animation: l27 1s infinite steps(8);
+}
+
+@keyframes l27 {
+  100% {transform: rotate(1turn)}
+}
+
 .App {
   display: grid;
   grid-template-columns: 450px 1fr;
@@ -14,6 +52,12 @@
   'partOne partTwo'
   'projects projects'
   'skillsAndContact skillsAndContact';
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
 }
 
 .App-logo {
@@ -39,12 +83,6 @@
 
 .secondPart h3 {
   margin-top: 0;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -98,7 +136,6 @@ p {
   width: 50%;
   height: 250px;
   margin-bottom: 20px;
-  background-color: var(--pink);
   display: grid;
   justify-items: center;
   align-items: center;
@@ -246,37 +283,40 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 450px) {
+  body {margin: 64px 24px}
 
-
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'partOne' 
+      'partTwo'
+      'projects' 
+      'projects'
+      'skillsAndContact' 
+      'skillsAndContact';
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile {
+    width: 80% !important;
+    height: fit-content !important;
   }
-}
 
-/* Loader */
-.loader {
-  --d:22px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  color: #25b09b;
-  box-shadow: 
-    calc(1*var(--d))      calc(0*var(--d))     0 0,
-    calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
-    calc(0*var(--d))      calc(1*var(--d))     0 2px,
-    calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
-    calc(-1*var(--d))     calc(0*var(--d))     0 4px,
-    calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
-    calc(0*var(--d))      calc(-1*var(--d))    0 6px;
-  animation: l27 1s infinite steps(8);
-}
+  div.page{
+    max-width: 450px;
+  }
 
-@keyframes l27 {
-  100% {transform: rotate(1turn)}
+  .Projects > .container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-items: center;
+  }
+
+  .Form {
+    width: 100% !important;
+    margin: 0
+  }
+
+  div.full {
+    gap: 1rem
+  }
 }

@@ -1,12 +1,13 @@
 import React from 'react'
+ const profile = require('./asset/images/profile.png')
 
 function MainPartOne() {
   return (
     <div className='PartOne'>
       <h2 className='color-purple'>Joyal George K J <br />(he/him)</h2>
       <p className='color-purple'>Front-End Dev + React Dev</p>
-      <div className="profile">
-        <div className="loader"></div>
+      <div className="profile" onClick={() => console.log('datas.documents')}>
+        <img src={profile}></img>
       </div>
 
       <div className="connectwithme">
