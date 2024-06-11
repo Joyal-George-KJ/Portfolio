@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8d9bf827.css",
-    "main.js": "/Portfolio/static/js/main.d6e989d6.js",
+    "main.css": "/Portfolio/static/css/main.df37dbfb.css",
+    "main.js": "/Portfolio/static/js/main.06923b14.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/bg.png": "/Portfolio/static/media/bg.a362f2641ae657039556.png",
+    "static/media/profile.png": "/Portfolio/static/media/profile.2e1614cf345744f35dd9.png",
     "static/media/1.Body-Grotesque-Slim-Bold-trial.ttf": "/Portfolio/static/media/1.Body-Grotesque-Slim-Bold-trial.3eba15e245b9495c5416.ttf",
     "static/media/4.Body-Grotesque-Large-Bold-trial.ttf": "/Portfolio/static/media/4.Body-Grotesque-Large-Bold-trial.453e0d88a4a657604c29.ttf",
     "static/media/Resume - Joyal George K J.pdf": "/Portfolio/static/media/Resume - Joyal George K J.507cf65a6ec1db145c59.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.8d9bf827.css.map": "/Portfolio/static/css/main.8d9bf827.css.map",
-    "main.d6e989d6.js.map": "/Portfolio/static/js/main.d6e989d6.js.map",
+    "main.df37dbfb.css.map": "/Portfolio/static/css/main.df37dbfb.css.map",
+    "main.06923b14.js.map": "/Portfolio/static/js/main.06923b14.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d9bf827.css",
-    "static/js/main.d6e989d6.js"
+    "static/css/main.df37dbfb.css",
+    "static/js/main.06923b14.js"
   ]
 }
